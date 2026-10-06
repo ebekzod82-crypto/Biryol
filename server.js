@@ -21,6 +21,6 @@ async function route(req,res){const u=new URL(req.url,'http://localhost');let d=
    return json(res,404,{error:'API topilmadi'});
   }catch(e){return json(res,500,{error:'Server xatosi'})}
  }
- let file=u.pathname==='/'?'/public/index.html':u.pathname;file=path.join(ROOT,file);if(file.startsWith(ROOT)&&fs.existsSync(file)&&fs.statSync(file).isFile())return sendFile(res,file);res.writeHead(404);res.end('404');
+ let file=u.pathname==='/'?'/index.html':u.pathname;file=path.join(ROOT,file);if(file.startsWith(ROOT)&&fs.existsSync(file)&&fs.statSync(file).isFile())return sendFile(res,file);res.writeHead(404);res.end('404');
 }
 http.createServer(route).listen(PORT,()=>console.log(`Biryol V3: http://localhost:${PORT}`));
