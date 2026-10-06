@@ -1,0 +1,45 @@
+{
+  "users": [],
+  "businesses": [
+    {
+      "id": "164715d4-1bf0-4717-b2c4-91cde15ee6ad",
+      "name": "Siyob Market",
+      "category": "Oziq-ovqat",
+      "city": "Toshkent",
+      "rating": 4.9,
+      "description": "Mahsulotlar va kundalik xaridlar",
+      "phone": "+998 90 000 00 01",
+      "mapVisible": true,
+      "plan": "standard"
+    },
+    {
+      "id": "d604a0bb-4d96-4d4a-aa89-61c91f3cd9a0",
+      "name": "Pro Service",
+      "category": "Avtoservis",
+      "city": "Toshkent",
+      "rating": 4.8,
+      "description": "Avto ta’mirlash va servis",
+      "phone": "+998 90 000 00 02",
+      "mapVisible": true,
+      "plan": "premium"
+    }
+  ],
+  "items": [
+    {
+      "id": "65805102-4ff8-4758-9bf8-f179997e02b0",
+      "businessId": "164715d4-1bf0-4717-b2c4-91cde15ee6ad",
+      "type": "product",
+      "name": "Organik asal",
+      "price": 65000,
+      "unit": "dona"
+    },
+    {
+      "id": "c6dc04ae-a5fb-403a-8958-c0bfc7ce8bc5",
+      "businessId": "d604a0bb-4d96-4d4a-aa89-61c91f3cd9a0",
+      "type": "service",
+      "name": "Kompyuter diagnostikasi",
+      "price": 100000,
+      "unit": "xizmat"
+    }
+  ]
+}
